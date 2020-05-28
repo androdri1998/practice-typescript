@@ -1,9 +1,22 @@
 import { Request, Response } from "express";
+import faker from "faker";
 import EmailService from "../services/EmailService";
 
 const users = [
-  { name: "first user", email: "email@example.com" },
-  { name: "second user", email: "email@example.com" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
+  { name: faker.name.firstName(), email: "No" },
 ];
 
 export default {

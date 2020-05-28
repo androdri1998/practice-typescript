@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 interface IUser {
   name: string;
@@ -11,7 +12,7 @@ interface IProps {
 
 const User: React.FC<IProps> = ({ user }) => {
   return (
-    <div>
+    <div className="line">
       <strong>Name: </strong> {user.name} <br />
       <strong>Mail: </strong> {user.email} <br />
     </div>
